@@ -9,6 +9,11 @@
 			-webkit-tap-highlight-color: transparent;
 			font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 		}
+		html {
+			background: radial-gradient(rgb(28 45 51), rgb(21, 35, 40));
+            		background: radial-gradient(rgb(71 104 115), rgb(21, 35, 40));
+			height: 100%;
+		}
 		html, body {
 			font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 			font-size: 16px;
@@ -17,14 +22,15 @@
 		body {
 			margin: 0;
 			padding: 0;
-			background: radial-gradient(rgb(28 45 51), rgb(21, 35, 40));
-            		background: radial-gradient(rgb(71 104 115), rgb(21, 35, 40));
 			color: rgb(254, 206, 108);
 		}
 		#container {
-			margin: 40px auto;
+			margin: 0 auto;
 			max-width: 560px;
 			padding: 20px;
+			position: relative;
+			display: flex;
+			height: 100vh;
 		}
 		pre {
 			display: block;
@@ -62,8 +68,18 @@
 			text-align: center;
 		}
 		.info {
+			display: flex;
+			z-index: 2;
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+			gap: 1rem;
 		}
 		.circle {
+			display: flex;
+			position: relative;
+			height: 100%;
+			width: 100%;
 		}
 	</style>
 </head>
