@@ -2,6 +2,9 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="theme-color" media="(prefers-color-scheme: light)" content="rgb(71 104 115)" />
+	<meta name="theme-color" media="(prefers-color-scheme: dark)" content="rgb(21, 35, 40)" />
 	<title>Seqtalk</title>
 	<style type="text/css" media="screen">
 		* {
@@ -10,8 +13,11 @@
 			font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 		}
 		html {
-			background: radial-gradient(rgb(28 45 51), rgb(21, 35, 40));
-            		background: radial-gradient(rgb(71 104 115), rgb(21, 35, 40));
+			background-color: rgb(21, 35, 40);
+			background-image: radial-gradient(rgb(71 104 115), rgb(21, 35, 40));
+			background-size: cover;
+			background-attachment: fixed;
+			background-repeat: no-repeat;
 			height: 100%;
 		}
 		html, body {
@@ -69,17 +75,33 @@
 		}
 		.info {
 			display: flex;
+			flex-direction: row;
 			z-index: 2;
 			position: absolute;
 			top: 50%;
+			right: 0;
+			left: 0;
+			padding: 1rem;
 			transform: translateY(-50%);
 			gap: 1rem;
+		}
+		.info p {
+			margin-top: 6rem;
 		}
 		.circle {
 			display: flex;
 			position: relative;
 			height: 100%;
 			width: 100%;
+		}
+
+		@media only screen and (max-width: 600px) {
+			.info {
+				flex-direction: column;
+			}
+			.info p {
+				margin-top: 0;
+			}
 		}
 	</style>
 </head>
@@ -90,8 +112,14 @@
 			<p>
 				Developing software for positioning & communication.
 				<br/><br/>
-Seqtalk is a team of three innovative professionals dedicated to providing secure and reliable communication solutions. With advanced technologies and robust security measures, we keep you connected and protected.
-<br/>Let us be your technology partner and take your business to the next level. Contact us today and experience communication made secure and easy!
+				Seqtalk is a team of three innovative professionals dedicated to providing secure and reliable communication solutions. With advanced technologies and robust security measures, we keep you connected and protected.
+				<br/>
+				Let us be your technology partner and take your business to the next level. Contact us today and experience communication made secure and easy!
+				<br/><br/>
+				Kind regards,<br/>
+				Roger, Ola & Jim<br/><br/>
+				<a class="u-email" href="mailto:info@seqtalk.com">info@seqtalk.com</a>
+
 			</p>
 		</div>
 
