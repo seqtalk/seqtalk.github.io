@@ -35,7 +35,7 @@
 			display: flex;
 			align-items: center;
     		justify-content: center;
-			min-height: 94vh;
+			min-height: 100vh;
 		}
 		pre {
 			display: block;
@@ -92,6 +92,9 @@
 		}
 
 		@media only screen and (max-width: 600px) {
+			#container {
+				min-height: unset;
+			}
 			.info {
 				flex-direction: column;
 			}
